@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #34A0A4;
+    
+}
+
+h1{
+    text-align: center;
+}
+ul {
+    color:#fff;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navegacion{
+    width: 150px;
+    margin: 30px ;
+    background: #0B123B;
+}
+
+.navegacion ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li{
+display: inline-block;
+    
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color:#00C9BD;
+    transition: all .3s;
+    background-color: #434343;
+}
+
+/* submenu*/
+
+.submenu{
+    position: absolute;
+    background: #0B132B;
+    width: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+table{
+    position:relative;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: #fff;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    color: #434343;
+}
+
+ol{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+
+
+

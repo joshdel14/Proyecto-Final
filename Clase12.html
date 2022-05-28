@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permisos Linux</title>
+    <link rel="stylesheet" href="/estilos.css" >
+</head>
+<body>
+    <h1>Permisos de usuario en archivos - Linux</h1>
+    <br>
+    <hr>
+    <p>Cuando tenemos un servidor NAS basado en Linux, o directamente un sistema operativo como Debian o 
+        Ubuntu donde tenemos instalados diferentes servicios para acceder a los archivos y carpetas en red 
+        local por parte de otros usuarios, controlar el acceso de lectura, escritura y ejecución a los archivos 
+        y carpetas que compartimos es algo fundamental. Debemos tener en cuenta que, cuando compartir vía Samba o 
+        FTP nuestras carpetas y archivos, es posible que la autenticación de los clientes sea con un usuario sin privilegios, 
+        por tanto, deberemos organizar correctamente los usuarios y grupos para proporcionar los permisos necesarios y no más.</p>
+        <br>
+        <hr>
+        
+        <h3>Para qué cambiar los permisos</h3>
+        <br>
+      
+        <p>
+            Los sistemas operativos son multiusuario, podemos acceder de forma simultánea con varios usuarios registrados localmente en 
+            nuestro sistema operativo, por tanto, es muy importante realizar una revisión periódica de los permisos existentes. Muchas 
+            veces queremos evitar que otros usuarios del equipo modifiquen los archivos, pero no sabemos cómo conseguirlo. En esta ocasión, 
+            os vamos a enseñar o cómo asignar permisos a carpetas y archivos en Linux.
+            <br>
+            Imaginemos que tenemos un servidor Samba o FTP y diferentes grupos de usuarios y también usuarios, si todos los usuarios tuvieran 
+            permisos de administrador, podrían leer, escribir y ejecutar cualquier archivo que tengamos en estas carpetas compartidas. Por este 
+            motivo es tan importante gestionar adecuadamente los permisos de los usuarios, grupos y otros para los archivos y las carpetas, para 
+            que solamente accedan a determinados archivos los usuarios o grupos de usuarios que nosotros queramos, y nadie más, aunque puedan 
+            autenticarse en el sistema a través del servicio Samba o FTP.
+        </p>
+        <br>
+        <img src="/img/linux1.jpg">
+        <br>
+        <hr>
+        <h3>Qué es el comando chmod y para qué sirve</h3>
+        <br>
+        <p>
+            El comando chmod (change mode) tiene como finalidad cambiar los permisos de usuario, grupo y otros a los archivos y carpetas, podremos 
+            cambiar los permisos de lectura, escritura y ejecución de todos los archivos y carpetas que nosotros deseemos, además, podremos hacer una 
+            modificación recursiva de una determinada carpeta, de esta forma, todos los archivos y carpetas de su interior también se verán afectados 
+            por este cambio. La modificación recursiva es de mucha ayuda cuando tenemos que modificar los cientos o miles de archivos que tengamos dentro 
+            de una carpeta, y también todo lo que hay por debajo en el árbol de directorios.
+            <br>
+            El comando chmod está disponible tanto en sistemas operativos Linux como también Unix, por tanto, si nuestro servidor está basado en Unix como 
+            un FreeBSD, podremos cambiar los permisos de archivos y carpetas de la misma forma que lo hacemos en un Debian o Ubuntu. Este comando es ampliamente 
+            utilizado por cualquier administrador de sistemas para configurar adecuadamente los accesos a sus servidores.
+        </p>
+        <img src="/img/linux2.jpg">
+        <br>
+        <br>
+        <hr>
+        <footer>&copy Joshua Ramses Delgadillo Ramirez y Gustavo Ariel Barrientos Garcia</footer>
+</body>
+</html>

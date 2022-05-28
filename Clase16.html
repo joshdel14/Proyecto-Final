@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHPMyadmin y WorkBench</title>
+    <link rel="stylesheet" href="/estilos.css" >
+</head>
+<body>
+
+    <h1>PHPMyAdmin y WORKBRENCH</h1>
+    <br>
+    <hr>
+    <h2>Insertar datos en PHPMyadmin</h2>
+    <br>
+    <h3>Abrir cuadro de introducir datos</h3>
+    <p>
+        En páginas anteriores de este tema hemos hecho un ejemplo para mostrar la creación de una base de datos 
+        en MySql con PhpMyAdmin. Hasta ahora hemos creado la base de datos y hemos creado también las tablas de esta base.
+
+        En páginas anteriores hemos creado la base de datos "literatura". Ahora debemos rellenar las tablas 
+        con algunos datos. Para ello empezaremos por la tabla "Genero". Abrimos esta tabla en phpMyAdmin, y 
+        vemos que en la parte de arriba hay una serie de opciones:
+<br>
+<br>
+Vemos que nos sale un panel para insertar nuevos registros en la tabla. Este panel puede estar repetido, para insertar dos 
+registros a la vez, si queremos insertar sólo uno rellenaremos sólo la primera parte, y si queremos ver el panel sólo para un registro, 
+iremos a la parte de abajo , donde pone "reinicie la insercion con 2 filas", cambiamos el 2 por el 1, y nos quedaremos con un solo panel para insertar.
+
+Los datos a insertar los escribiremos en la columna "Valor", para cada uno de los campos. Los campos que empiezan por id 
+(con autoincremento) no los rellenaremos, por lo que aquí rellenamos el primer dato para el campo género, Escribimos "Novela" 
+y pulsamos luego en contiinuar:
+<br>
+<br>
+La columna "Función", a no ser que queramos hacer algun tipo de operación con los datos que insertamos, la dejaremos siempre en blanco. Vamos a la parte de abajo, 
+donde pone "grabar y luego volver", dejamos las opciones como están, y debajo de ellas pulsamos en "continuar". Nos aparece la siguiente pantalla:
+<br>
+<br>
+Nos aparece la tabla en vista "examinar", en la cual aparecen los diferentes registros de la tabla. Si queremos ver la tabla en la vista que estaba antes, pulsamos 
+en la parte superior en "estructura" y si queremos volver a insertar un nuevo registro pulsamos en la parte superior en insertar, y volvemos a comenzar el proceso.
+
+Seguiremos insertando nuevos registros en la tabla, con los siguientes valores para el campo Genero: "poesía", "teatro". Recuerda que el campo "idGenero no debe 
+rellenarse al ser de auto incremento. Para ello pulsamos en insertar y volvemos a repetir el proceso.
+
+Es posible que al pulsar en "continuar" al acabar de insertar un registro, no nos salga la vista "examinar" sino la vista "SQL", podemos cambiar la vista desde
+ la parte superior de la página, pulsando en examinar. 
+ Ahora en vista examinar, veremos la tabla con los tres registros que hemos incluido
+    </p>
+    <img src="/img/1.gif">
+    <br>
+
+<hr>
+<h2>Hacer un BackUp en WORKBRENCH</h2>
+<br>
+<p>
+Primero debemos ingresar a nuestro Mysql Workbench y seleccionar la opción Data Export, tal
+como se señala en la figura:
+<br>
+<img src="/img/b1.PNG">
+<br>
+<p>
+    Nos aparecerá la siguiente pantalla
+</p>
+<img src="/img/B2.PNG">
+<br>
+<p>
+    Aquí seleccionamos la base de datos que queremos respaldar en nuestro caso seleccionaremos la
+    BD “bdinventario”.
+      
+</p>
+<img src="/img/B3.PNG">
+<br>
+<p>
+    Como veremos aparecen por defecto seleccionadas todas las tablas de la base de datos, para nuestro
+caso dejamos seleccionado todo por defecto.
+En las opciones de la parte inferior debemos escoger si queremos crear en una carpeta varios
+archivos por cada tabla o un solo archivo para toda la base de datos, en nuestro caso elegimos la
+segunda opción:
+</p>
+<img src="/img/B4.PNG">
+<br>
+<p>
+    Luego debemos seleccionar la ubicación y el nombre de nuestro archivo sql para poder guardarlo
+</p>
+<img src="/img/B5.PNG">
+<br>
+<hr>
+<h2>Como Restaurar un backup en MySQL Workbench?</h2>
+<br>
+<p>
+El software MySQL Workbench es un programa desarrollado por Oracle que le permite administrar de forma remota MySQL 
+Workbench proporciona un entorno GUI integrado para el diseño de bases de datos MySQL.
+Puede descargar el programa MySQL Workbench desde el sitio web oficial de MySQL. Después de descargar el programa, 
+siga los pasos de instalación para instalar correctamente el software en su máquina.
+Restaurando un Backup en MySQL Workbench
+</p>
+<img src="/img/a1.webp">
+<br>
+<p>
+Luego de tener su conexion configurada , en la ventana principal del software MySQL Workbench, verá una nueva conexión debajo 
+de la línea MySQL Connections. Haga doble clic en él para establecer una conexión con su cuenta de alojamiento y comenzar a administrar sus bases de datos.
+</p>
+<img src="/img/a2.png">
+<br>
+<p>
+    Cuando abra una conexión a su cuenta, verá una nueva ventana que tiene varias herramientas disponibles para su uso. 
+    Puede utilizar estas herramientas para restaurar una base de datos.
+
+Para restaurar una copia de seguridad de una base de datos de mysql en su máquina local, puede usar la herramienta de 
+importació de datos de la columna del lado izquierdo.
+</p>
+<img src="/img/a3.png">
+</p>
+<br>
+<hr>
+
+
+    
+
+
+
+
+
+<footer>&copy Joshua Ramses Delgadillo Ramirez y Gustavo Ariel Barrientos Garcia</footer>
+</body>
+</html>

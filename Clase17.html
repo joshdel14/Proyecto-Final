@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción Redes</title>
+    <link rel="stylesheet" href="/estilos.css" >
+</head>
+<body>
+<h1>Introducción Redes</h1>
+<br>
+<hr>
+<p>
+La comunicación de datos es el movimeintos de informacion de computadoras
+de un punto a otro por medio de sistemas de transmisión eléctricos u ópticos.
+Tales sistemas también se denominan redes de comunicación de datos.
+<br>
+<br>
+Los mensajes son generados por una terminal de envío. A continuación, se transmiten 
+a través de la red de enlaces y nodos hasta que llegan a la terminal de destino. 
+Es trabajo de los nodos intermedios gestionar los mensajes y enviar el enlace correcto 
+hacia su destino final.
+<br>
+<br>
+Estos mensajes constan de secciones de control (o señalización) y secciones portadoras que 
+pueden ser enviadas juntas o por separado. La parte portadora es el contenido real que el 
+usuario desea transmitir (por ejemplo, algún discurso codificado, o un correo electrónico), 
+mientras que la parte de control instruye a los nodos acerca de dónde y, posiblemente, de qué 
+forma tiene que ser enviado a través de la red. Se han desarrollado un gran número de protocolos 
+a lo largo de los años para especificar cómo cada tipo de red de telecomunicaciones debe manejar 
+los mensajes de control y los mensajes portadores para lograr esto de manera eficiente.
+</p>
+<br>
+<br>
+<hr>
+<h2>Redes de computadoras</h2>
+<br>
+<p>
+Una red de computadoras (también llamada red de ordenadores o red informática) es un conjunto 
+ de equipos nodos y software conectados entre sí por medio de dispositivos físicos que envían y 
+ reciben impulsos eléctricos, ondas electromagnéticas o cualquier otro medio para el transporte de datos, 
+ con la finalidad de compartir información, recursos y ofrecer servicios.
+<br>
+<br>
+Como en todo proceso de comunicación, se requiere de un emisor, un mensaje, un medio y un receptor. 
+La finalidad principal para la creación de una red de computadoras es compartir los recursos y la 
+información en la distancia, asegurar la confiabilidad y la disponibilidad de la información, aumentar 
+la velocidad de transmisión de los datos y reducir el costo. Un ejemplo es Internet, el cual es una gran red 
+de millones de computadoras ubicadas en distintos puntos del planeta interconectados básicamente para compartir 
+información y recursos.
+<br>
+<br>
+La estructura y el modo de funcionamiento de las redes informáticas actuales están definidos en varios estándares, 
+siendo el más importante y extendido de todos ellos el modelo TCP/IP utilizado como base para el modelo de referencia 
+OSI. Este último, concibe cada red como estructurada en siete capas con funciones concretas pero relacionadas entre sí 
+(en TCP/IP se habla de cuatro capas). Debe recordarse que el modelo de referencia OSI es una abstracción teórica, que 
+facilita la comprensión del tema, si bien se permiten ciertos desvíos respecto a dicho modelo.
+<br>
+<br>
+Existen multitud de protocolos repartidos por cada capa, los cuales también están regidos por sus respectivos estándares.
+</p>
+<br>
+<br>
+<hr>
+<h2>Packet Tracer</h2>
+<br>
+<p>
+La versión actual soporta un conjunto de Protocolos de capa de aplicación simulados, al igual que enrutamiento básico con 
+RIP, OSPF y EIGRP. Aunque Packet Tracer provee una simulación de redes funcionales, utiliza solo un pequeño número de 
+características encontradas en el hardware real corriendo una versión actual del Cisco IOS. Packet Tracer no es la solución 
+más adecuada para redes en producción.
+<br>
+<br>
+En este programa se crea la topología física de la red simplemente arrastrando los dispositivos a la pantalla. Luego haciendo 
+clic sobre ellos se puede ingresar a sus consolas de configuración. Allí están soportados todos los comandos del Cisco IOS e 
+incluso funciona el "tab completion". Una vez completada la configuración física y lógica de la red, también se pueden hacer 
+simulaciones de conectividad (pings, traceroutes) todo ello desde las mismas consolas incluidas.
+<br>
+<br>
+Una de las grandes ventajas de utilizar este programa es que permite "ver" (opción "Simulation") cómo deambulan los paquetes 
+por los diferentes equipos (switchs, routers, PCs), además de poder analizar de forma rápida el contenido de cada uno de ellos 
+en las diferentes "capas"y "datos".
+<br>
+<br>
+Además tiene diversos módulos para extender sus capacidades, como por ejemplo conexión con Moodle
+</p>
+<br>
+<br>
+<hr>
+<h2>Simuladores de Redes</h2>
+<br>
+<p>
+Los siguientes programas podemos instalarlos de forma completamente gratuita en nuestro equipo, con el objetivo de crear redes complejas 
+ y simular su funcionamiento en la vida real. De esta forma, en caso de que detectemos algún problema que pueda trasladarse a la vida real,
+ a la instalación final que vayamos a configurar, podremos solucionarlo lo antes posible y buscar una solución.
+</p>
+<br>
+<h3>GNS3</h3>
+<p>
+    Otro simulador de redes que podemos utilizar es GNS3, que son las siglas de Graphical Network Simulator. Tiene la peculiaridad de ser de 
+    código abierto y ha sido diseñado para poder simular redes más complejas de una manera sencilla. Su objetivo es simular lo mejor posible
+     cómo sería en la vida real. Nuevamente estamos ante un programa gratuito y de código abierto, muy útil para ingenieros, administradores 
+     y cualquier persona que esté preparando certificaciones para Cisco o Juniper. Sirve para realizar todo tipo de pruebas y poder poner así 
+     a prueba los conocimientos, solventar posibles errores que aparezcan, etc.
+</p>
+<br>
+<img src="/img/gn3.webp" width="650px">
+<br>
+<h3>Eve-NG</h3>
+<br>
+<p>
+    Eve-NG o también conocido como Emulated Virtual Environment Next Generation, es un programa que nos permite simular redes virtuales de múltiples
+     proveedores. Este programa ha sido desarrollado para usuarios domésticos o pequeñas empresas donde quieren simular sus redes y configuraciones. 
+     A diferencia de los dos programas anteriores, tenemos tanto una edición «Community Edition» que es totalmente gratuita, y también una versión profesional 
+     con un pago anual. Tanto GNS3 como Eve-NG necesitan las imágenes de software de los dispositivos de red, y en muchas ocasiones no es posible conseguirlas 
+     de forma gratuita. Eve-NG consume muy pocos recursos y tan solo necesitaríamos un programa como PuTTY para acceder y modificar la topología de la red.
+</p>
+<br>
+<img src="/img/eve ng.webp"width="650px">
+<br>
+<hr>
+<br>
+<br>
+
+
+<footer>&copy Joshua Ramses Delgadillo Ramirez y Gustavo Ariel Barrientos Garcia</footer>
+</body>
+</html>

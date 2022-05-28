@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalización</title>
+    <link rel="stylesheet" href="/estilos.css" >
+</head>
+<body>
+
+    <h1>Normalización</h1>
+    <br>
+    <hr>
+<h2>¿Qué es la normalización?</h2>
+<br>
+<p>
+Es la aplicación de un conjunto de reglas que permite aprobar la
+construcción de un modelo de base de datos relacionales.
+Es el proceso de organizar los datos de una base de datos.
+Se incluye la creación de tablas y el establecimiento de relaciones entre
+ellas según reglas diseñadas tanto para proteger los datos como para
+hacer que la base de datos sea más flexible al eliminar la redundancia y
+las dependencias incoherentes.
+</p>
+<br>
+<hr>
+<h2>Para que se normaliza</h2>
+<br>
+<p>
+Evitar la redundancia de los datos (datos iguales).
+Los datos redundantes desperdician el espacio de disco y crean
+problemas de mantenimiento.
+Evitar problemas de actualización de los datos en las tablas.
+Proteger la integridad de los datos.
+</p>
+<br>
+<hr>
+<h2>Para que se usan</h2>
+<br>
+<p>
+Para corregir errores en el diseño de la base de datos.
+Mientras se puedan aplicar más de estas reglas o formas normales a una
+tabla, habrán menos anomalías o errores lógicos al momento de
+efectuar el diseño de nuestras tablas.
+Si decide infringir una de las tres primeras reglas de la normalización,
+asegúrese de que su aplicación se anticipa a los problemas que puedan
+aparecer, como la existencia de datos redundantes y de dependencias
+incoherentes. 
+</p>
+<br>
+<hr>
+<h2>Formas normales</h2>
+<br>
+<p>
+Existen diferentes formas normales para aplicar.
+Generalmente se parte con la mas básica y se va subiendo de nivel.
+Esto no indica que se apliquen en forma iterativa.
+Existen tablas que no pueden seguir normalizándose.
+</p>
+<br>
+<hr>
+<h2>Forma Normal 1 (FN1)</h2>
+<br>
+<p>
+Una relación esta en FN1 si y solo si todos los atributos son atómicos.
+Además, debe haber solo una llave primaria.
+Un atributo es atómico si representa solo un valor.
+No deben existir mas valores en el campo de la tabla.
+Si existen, se eliminan y se emplean en nuevas relaciones.
+</p>
+<br>
+<hr>
+<h2>Forma Normal 2 (FN2)</h2>
+<br>
+<p>
+Ejemplo: Usando la tabla resultado de FN1
+Vemos que no todos los atributos dependen totalmente de la llave
+primaria (factura y línea).
+</p>
+<br>
+<hr>
+<h2>Forma Normal 3 (FN3)</h2>
+<br>
+<P>
+Una relación esta en FN3 si y solo si esta en FN2 y todos los atributos
+dependen directamente de la llave primaria.
+No deben existir dependencias transitivas.
+Una dependencia transitiva existe cuando un elemento depende de otro
+elemento que depende directamente de la llave primaria. (A->B->C).
+</P>
+<br>
+<br>
+<hr>
+
+
+
+
+    <footer>&copy Joshua Ramses Delgadillo Ramirez y Gustavo Ariel Barrientos Garcia</footer>
+</body>
+</html>

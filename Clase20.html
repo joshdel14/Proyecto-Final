@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red básica en Packet Tracer</title>
+    <link rel="stylesheet" href="/estilos.css" >
+</head>
+<body>
+
+<h1>Red básica en Packet Tracer</h1>
+<br>
+<hr>
+<p>
+Primamente se escoge los terminales finales o Pc a conectarse, luego de eso seleccionamos 
+el tipo de conexión es decir el tipo de cable que va a permitir conectar nuestras maquinas al switch, debería quedarte algo así:
+</p>
+<br>
+<img src="/img/red1.png">
+<br>
+<p>
+Luego de haber realizado esto asemos el asignamiento de los IP a cada máquina, para ellos hacemos un clip sobre el dispositivo o Pc 
+la cual desplegara una pantalla como la muestra la imagen:
+</p>
+<br>
+<img src="/img/red2.png">
+<br>
+<p>
+Luego de de esto seleccionamos en la pestaña escritorio, y pulsamos IP Configuración: 
+</p>
+<img src="/img/red3.png">
+<img src="img/red4.png">
+<br>
+<p>
+
+En esta parte es donde se asigna el IP estáticas para que se puedan conectar nuestros dispositivos de manera correcta:
+</p>
+<br>
+<img src="/img/red5.png">
+<br>
+<P>
+Una vez realizado esto cerramos la ventana y procedemos a realizar esto en todas nuestras Pc, para ello utilizaremos para 
+mi ejemplo la IP: 192.168.1.5 la cual solo variará el ultimo numero es decir 192.168.1.7
+Luego de eso para comprobar si está bien conectado y se está trasmitiendo realizamos un pin entre maquinas, para ello 
+hacemos un clip sobre el dispositivo o Pc la cual desplegara una pantalla como la vez anterior y esta vez pulsaremos el
+ botón Terminal y realizaremos un ping como muestra la imagen.
+Si sale como la muestra la imagen la conexión esta correcta.
+</P>
+<br>
+<img src="/img/red6.png">
+<br>
+<hr>
+<h2>Dos routers unidos</h2>
+<br>
+<P>
+El objetivo de esta práctica es crear grupos de trabajos para la transmisión de datos mediante un router.
+Pasos para realizar esta práctica:
+1.- Primero creamos dos Switch asignando cinco ordenadores a cada uno. <br>
+2.- Utilizamos un router para la interconexión entre Switch.<br>
+3.- Asignamos las IP a cada una de las maquinas, recordando que en esta ocasión al utilizar un router de por  
+medio así que debemos especificar con el Switch #1 la IP 192.168.1.1 y para el Switch #2 la IP 192.168.2.1.<br>
+4.- Debemos asignar el Gateway de la siguiente manera.<br>
+5.- Conectamos los equipos con su respectivo Switch mediante cable directo.<br>
+<img src="/img/router1.jpg" width="650px">
+<br>
+<p>
+6.- Luego procedemos a la conexión con el router mediante cable directo.<br>
+7.- Para poder concretar la conexión exitosa, no olvidemos especificar la dirección MAC, la dirección IP, 
+la máscara de la Subred y asegurarnos que el Estado del Puerto este ENCENDIDO.<br>
+8.- Para comprobar la conexión realizamos un envió de paquetes y listo.<br>
+<img src="/img/router2.jpg"width="650px">
+</p>
+<br>
+
+<hr>
+<br>
+<br>
+
+
+
+    <footer>&copy Joshua Ramses Delgadillo Ramirez y Gustavo Ariel Barrientos Garcia</footer>
+</body>
+</html>

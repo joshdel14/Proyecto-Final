@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos SO</title>
+    <link rel="stylesheet" href="/estilos.css" >
+</head>
+<body>
+    <h1>Recursos SO</h1>
+<br>
+    <hr>
+    <h2>Procesos</h2>
+<br>
+<h3>Que es un proceso</h3>
+<br>
+<p>Un proceso puede informalmente entenderse como
+    un programa en ejecución. Formalmente un proceso es "Una
+    unidad de actividad que se caracteriza por la ejecución de una
+    secuencia de instrucciones, un estado actual, y un conjunto de
+    recursos del sistema asociados.</p>
+<br>
+<img src="/img/procesos.png">
+<hr>
+<br>
+<h2>Modelo de Procesos</h2>
+<ol>
+    <li>Todo el software ejecutable, inclusive el Sistema Operativo, se
+        organiza en varios procesos secuenciales o procesos.</li>
+    <li>Un proceso incluye al programa en ejecución y a los valores
+            activos del contador, registros y variables del mismo.</li>
+    <li>Conceptualmente cada proceso tiene su propia CPU virtual.</li>
+    <li>Un proceso es una actividad de un cierto tipo, que tiene un
+        programa, entrada, salida y estado.</li>
+    </ol>
+<br>
+<p>Un solo procesador puede ser compartido entre varios
+    procesos con cierto “algoritmo de planificación”, el cual
+    determina cuándo detener el trabajo en un proceso y dar
+    servicio a otro distinto.
+<br>
+En cuanto a las jerarquías de procesos es necesario señalar
+que los Sistemas Operativos deben disponer de una forma de
+crear y destruir procesos cuando se requiera durante la
+operación, teniendo además presente que los procesos
+pueden generar procesos hijos mediante llamadas al Sistema
+Operativo, pudiendo darse ejecución en paralelo.
+</p>
+<br>
+<img src="/img/modelo de procesos.png">
+<br>
+<hr>
+<h2>Que es un Sistema Operativo
+    Multihilo</h2>
+<br>
+<p>Es aquel Sistema Operativo que posee varios hilos de
+    ejecución.
+    <br>
+    Un hilo de Ejecución o subproceso es una característica que
+    permite a una aplicación realizar varias tareas a la vez
+    (concurrentemente).
+    <br>
+    Los distintos hilos de ejecución comparten una serie de
+    recursos tales como el espacio de memoria, los archivos
+    abiertos, situación de autenticación, etc.
+    <br>
+    Los procesos son creados y destruidos por el sistema
+    operativo, así como también este se debe hacer cargo de
+    la comunicación entre procesos, pero lo hace a petición de
+    otros procesos.
+    <br>
+    El mecanismo por el cual un proceso crea otro proceso se
+    denomina bifurcación (fork). Los nuevos procesos son
+    independientes y no comparten memoria (es decir,
+    información) con el proceso que los ha creado.
+    <br>
+    En los sistemas operativos multihilo es posible crear tanto
+    hilos como procesos. La diferencia es en que un proceso
+    solamente puede crear hilos para sí mismo.</p>
+    <br>
+    <hr>
+<h2>Estados de un proceso</h2>
+<p>El principal trabajo del procesador es ejecutar las
+    instrucciones de máquina que se encuentran
+    en memoria principal. Estas instrucciones se encuentran en
+    forma de programas. Para que un programa pueda ser
+    ejecutado, el sistema operativo crea un nuevo proceso, y el
+    procesador ejecuta una tras otra las instrucciones del mismo.
+<br>
+Cada proceso es una entidad independiente pero frecuentemente
+debe interactuar con otros procesos.
+
+Los procesos pueden bloquearse en su ejecución porque:
+
+Desde el punto de vista lógico no puede continuar porque espera
+datos que aún no están disponibles.
+El Sistema Operativo asignó la CPU a otro proceso.
+</p>
+<hr>
+<br>
+<h2>Modelo de dos estados</h2>
+<p>En este modelo, un proceso puede estar ejecutándose o no. Cuando
+    se crea un nuevo proceso, se pone en estado de No ejecución.
+    
+    En algún momento el proceso que se está ejecutando pasará al
+    estado No ejecución y otro proceso se elegirá de la lista
+    de procesos listos para ejecutar para ponerlo en estado Ejecución.
+    
+    De esta explicación se desprende que es necesario que el sistema
+    operativo pueda seguirle la pista a los procesos, conociendo su
+    estado y el lugar que ocupa en memoria. Además los procesos que
+    no se están ejecutando deben guardarse en algún tipo de cola
+    mientras esperan su turno para ejecutar.</p>
+<br>
+<hr>
+<h2>Modelo de cinco estados</h2>
+<p>El modelo anterior de dos estados funcionaría bien con una cola FIFO
+    y planificación por turno rotatorio para los procesos que no están en
+    ejecución, si los procesos estuvieran siempre listos para ejecutar.
+    
+    En la realidad, los procesos utilizan datos para operar con ellos, y puede
+    suceder que no se encuentren listos, o que se deba esperar algún
+    suceso antes de continuar, como una operación de Entrada/Salida.
+    
+    Es por esto que se necesita un estado donde los procesos permanezcan
+    bloqueados esperando hasta que puedan proseguir.
+    
+    Se divide entonces al estado No ejecución en dos
+    estados: Listo y Bloqueado. Se agregan además un estado Nuevo y
+    otro Terminado.</p>
+<br>
+<hr>
+<h2>Estados de un proceso</h2>
+<p>Durante su existencia un proceso pasa por una serie de
+    estados discretos, siendo varias las circunstancias que pueden
+    hacer que el mismo cambie de estado.
+    
+    Debido a ello se puede establecer una “Lista de Listos” para
+    los procesos “listos” y una “Lista de Bloqueados” para los
+    “bloqueados”.</p>
+<br>
+<hr>
+<h2>Lista de Listos</h2>
+<br>
+<p>La “Lista de Listos” se mantiene en orden prioritario y la “Lista
+    de Bloqueados” está desordenada, ya que los procesos se
+    desbloquean en el orden en que tienen lugar los eventos que
+    están esperando.
+    
+    Al admitirse un trabajo en el sistema se crea un proceso
+    equivalente y es insertado en la última parte de la “Lista de
+    Listos”.
+    
+    La asignación de la CPU al primer proceso de la “Lista de
+    Listos” se denomina “Despacho”, que es ejecutado por una
+    entidad del Sistema Operativo llamada “Despachador”.</p>
+<hr>
+<br>
+<h2>Bloqueados</h2>
+<br>
+<p>El “Bloqueo” es la única transición de estado iniciada por el
+    propio proceso del usuario, puesto que las otras transiciones
+    son iniciadas por entidades ajenas al proceso.</p>
+    <br>
+    <hr>
+<h2>EL PCB O BCP</h2>
+<br>
+<p>El sistema operativo, para correr un proceso, necesita saber
+    cierta información importante de él, y esta, se encuentra
+    almacenada en un registro, que es el "Bloque de control de
+    proceso BCP".
+    
+    Cuando un proceso termina, su información que estaba
+    almacenada en el Bloque se elimina, y este puede ser utilizado
+    por otros procesos.</p>
+<hr>
+<br>
+
+
+
+    <footer>&copy Joshua Ramses Delgadillo Ramirez y Gustavo Ariel Barrientos Garcia</footer>
+</body>
+</html>

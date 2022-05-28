@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direcciones IP</title>
+    <link rel="stylesheet" href="/estilos.css" >
+</head>
+<body>
+
+<h1>Direcciones Ip y Mascaras de SubRed</h1>
+<br>
+<hr>
+<h2>Direcciones IP</h2>
+<br>
+<p>
+    La dirección IP es una dirección lógiconumérica asignada a cada ordenador, impresora, switch Gigabit Ethernet, router o cualquier 
+    otro dispositivo de una red basada en TCP/IP. Es decir, cada uno de estos dispositivos posee una dirección IP única. Las direcciones 
+    IP se configuran manualmente (dirección IP estática) o se configuran mediante un servidor DHCP. Una dirección IP consiste en 4 bytes de datos. 
+</p>
+<br>
+<img src="/img/ip.png">
+<br>
+<hr>
+<h2>¿Cuál es la subred y la máscara de subred?</h2>
+<br>
+<p>
+    La subred se refiere al proceso de división de la red más grande en subredes más pequeñas (subnets). Siempre se asigna una dirección IP para identificar 
+    la subred y otra para identificar la dirección de difusión dentro de la subred. La subred divide las redes más grandes en partes más pequeñas, lo cual es 
+    más eficiente y permite guardar una gran cantidad de direcciones. Las redes más pequeñas, en consecuencia, se crearon para una emisión más pequeña que 
+    genera menos tráfico de emisión. Además, la subred también simplifica la localización de fallos aislando los problemas de la red hasta su existencia específica.
+</p>
+<br>
+<img src="/img/subred.png">
+<br>
+<hr>
+<h2>Dirección de IP privada</h2>
+<br>
+<p>
+    La dirección IP privada es una dirección fija que se asigna a cada dispositivo conectado a una red privada o doméstica, es decir, la dirección IP que el router 
+    asigna a cada ordenador, smartphones, smart TV, tablet, videoconsola o cualquier otro dispositivo conectado a él. Así, cada dispositivo conectado a un router 
+    tiene su propia dirección IP privada, mientras comparten la misma IP pública.
+</p>
+<br>
+<h2>Rangos de IP privadas</h2>
+<br>
+<p>
+    Dentro de las IP privadas podemos encontrar diferentes rangos, que se asignan en función del tipo de red:
+</p>
+<br>
+<h3>Rango clase A</h3>
+<br>
+<p>
+El rango de clase A es el que emplean las grandes empresas, puesto que permite crear hasta 126 redes distintas 
+y conectar hasta un máximo de 16.777.214 equipos a la red.
+Este rango se encuentra entre estos números: 10.0.0.0 a 10.255.255.255. El primer bloque de la dirección identifica 
+la red y los otros tres bloques identifican a los dispositivos que se conectan a la red.
+</p>
+<br>
+<h3>Rango clase B</h3>
+<br>
+<p>
+El rango clase B se emplea en redes de tamaño medio, como organizaciones o universidades. Permite crear un mayor 
+número de redes que el rango A, 16.384 redes, pero con muchos menos equipos conectados a ellas, 65.534 dispositivos.
+El rango está en 172.16.0.0 a 172.31.255.255; los dos primeros bloques identifican la red y los restantes a los equipos conectados a ella.
+</p>
+<br>
+<h3>Rango clase C</h3>
+<br>
+<p>
+Finalmente el rango clase C es el más común y usado, puesto que es el que se emplea en las redes domésticas. Permite 
+tener muchas más redes, 2.097.152, pero pudiendo conectar muchos menos equipos a cada una de ellas, 254.
+El rango C va desde 192.168.0.0 a 192.168.255.255; aquí son los tres primeros bloques los que identifican la red, 
+mientras que el último identifica a los equipos.
+</p>
+<br>
+<hr>
+<h2>Rango de direcciones IP públicas</h2>
+<br>
+<p>
+Las direcciones IP públicas también tienen rangos y se corresponden a aquellos que quedan excluidos de los rangos 
+para las IP privadas, yendo desde «1. …» hasta «191. …». De manera que el rango de la IP públicas estará en:
+</p>
+<br>
+<h3>Clase A:</h3>
+<p>
+    1.0.0.0 a 126.255.255.255
+</p>
+<br>
+<h3>Clase B: </h3>
+<p>
+    128.0.0.0 a 191.255.255.255
+</p>
+<br>
+<h3>Clase C:</h3>
+<p>
+    192.0.0.0 a 223.255.255.255
+</p>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
+    <footer>&copy Joshua Ramses Delgadillo Ramirez y Gustavo Ariel Barrientos Garcia</footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción Redes</title>
+    <link rel="stylesheet" href="/estilos.css" >
+</head>
+<body>
+    <h1>Comandos CMD para redes</h1>
+    <br>
+    <p>
+        Windows provee una variedad de comandos de consola para suplir cualquier necesidad sin 
+        depender de un entorno gráfico. Por supuesto, para temas de redes también tiene herramientas 
+        que pueden ser manipuladas por medio de comandos y formar instrucciones fantásticas para manipular, 
+        monitorizar y diagnosticar mejor nuestros sistemas de redes.
+
+Es por ello que se ha recopilado una miscelánea importante, 20 comandos de red más importante en Windows, 
+de los comandos más útiles para realizar testing de conectividad, tracking de datos y demás.
+    </p>
+<br>
+<hr>
+<h3>PING</h3>
+<br>
+<p>
+    Si necesitas una herramienta de diagnóstico que permita hacer verificaciones de estado de un determinado 
+    host local o remoto, te presento uno de los comandos más utilizados, este es, ni más ni menos que ping.
+
+Siempre que necesites hacer una verificación sobre un dispositivo interconectado en una infraestructura de red 
+se encuentra levantado o no, la primera prueba básica debe ser lanzar una consulta al protocolo de red ICMP 
+(Internet Control Message Protocol) en una red de tipo TCP/IP (Protocolo de Control de Transmisión / Protocolo de Internet).
+</p>
+<br>
+<hr>
+<h3>IPCONFIG</h3>
+<br>
+<p>
+    Obtener datos de la configuración de red TCP/IP nunca fue tan sencillo como utilizar el comando ipconfig, que 
+    precisamente obtener esta información y actualiza la configuración del protocolo de configuración dinámica de host 
+    (DHCP) y del sistema de nombres de dominio (DNS).
+</p>
+<br>
+<hr>
+<h3>HOSTNAME</h3>
+<br>
+<p>
+    Muestra el nombre del host actual. Este, probablemente es de los comandos de red más sencillos que existen.
+</p>
+<br>
+<hr>
+<h3> GETMAC</h3>
+<p>
+    Como lo dice su nombre, obtiene las direcciones MAC (Media Access Control) que tienen asociadas los adaptadores de red.
+</p>
+<br>
+<hr>
+<h3>ARP</h3>
+<br>
+<p>
+    Muestra y modifica las tablas de conversión de direcciones IP en direcciones físicas que utiliza el protocolo de resolución de direcciones ARP (Address Resolution Protocol).
+
+La caché ARP contiene una o más tablas que se utilizan para almacenar direcciones IP y sus direcciones físicas Ethernet o Token Ring resueltas.
+</p>
+<br>
+<hr>
+<h3>NSLOOKUP</h3>
+<br>
+<p>
+Este es de los comandos más útiles al momento de diagnosticar la infraestructura del sistema de nombres de dominio (DNS).
+La herramienta de línea de comandos nslookup tiene dos modos: interactivo y no interactivo.
+Si necesita buscar solo un dato, se recomienda que utilice el modo no interactivo. Para el primer parámetro, escriba el nombre o la dirección IP de la computadora que desea buscar.
+ Para el segundo parámetro, escriba el nombre o la dirección IP de un servidor de nombres DNS.
+</p>
+<br>
+<hr>
+<h3>NBTSTAT</h3>
+<br>
+<p>
+Muestra las estadísticas del protocolo NetBIOS sobre TCP/IP (NetBT), las tablas de nombres NetBIOS para la computadora local, las computadoras remotas y la caché.
+Este comando está disponible solo si el Protocolo de Internet (TCP/IP) está instalado como un componente en las propiedades de un adaptador de red en Conexiones de red.
+</p>
+<br>
+<hr>
+<h3>NETSTAT</h3>
+<p>
+    Muestra las conexiones TCP activas, los puertos en los que la computadora está escuchando, las estadísticas de Ethernet, la tabla de enrutamiento de IP, las estadísticas 
+    de IPv4 (para los protocolos IP, ICMP, TCP y UDP) y las estadísticas de IPv6 (para IPv6, ICMPv6, TCP sobre IPv6 y UDP sobre protocolos IPv6).
+</p>
+<br>
+<hr>
+<h3>NET USE</h3>
+<br>
+<p>
+Este comando net use es una instrucción que se utiliza para conectarse, eliminar y configurar conexiones a recursos compartidos, como unidades asignadas e impresoras de red.
+Es uno de los muchos como net send, net user, net time, net view , etc.
+</p>
+<br>
+<hr>
+<h3>TASKKILL</h3>
+<br>
+<p>
+    Es probable que te sorprenda ver este comando en la lista, pues este lo que hace es finalizar procesos o tareas en ejecución, sin embargo, una característica que lo hace 
+    estar aquí es que también puede finalizar procesos en equipos remotos, de la siguiente manera.
+</p>
+<br>
+<hr>
+<h3>SHUTDOWN</h3>
+<br>
+<p>Le permite apagar o reiniciar computadoras locales o remotas, una a la vez.
+
+Para forzar el cierre de las aplicaciones y reiniciar la computadora local después de un retraso de un minuto, con el motivo Aplicación: Mantenimiento (planificado) y el 
+comentario “Reconfiguración de miapp.exe”.
+</p>
+<br>
+<hr>
+<h3>TRACERT</h3>
+<br>
+<p>
+Esta es una de las principales herramientas de diagnóstico que determina la ruta tomada a un destino mediante el envío de solicitudes de eco del protocolo ICMP o mensajes 
+ICMPv6 al destino con valores de campo de tiempo de vida (TTL) que se mantienen incrementando.
+
+Cada enrutador a lo largo de la ruta debe disminuir el TTL en un paquete IP en al menos 1 antes de reenviarlo. Efectivamente, el TTL es un contador de enlaces máximo. 
+Cuando el TTL de un paquete llega a 0, se espera que el enrutador devuelva un mensaje de tiempo ICMP excedido a la computadora de origen.
+
+Este comando determina la ruta enviando el primer mensaje de solicitud de eco con un TTL de 1 e incrementando el TTL en 1 en cada transmisión subsiguiente hasta que el 
+objetivo responda o se alcance el número máximo de saltos. El número máximo de saltos es 30 de forma predeterminada y se puede especificar mediante el parámetro /h .
+</p>
+<br>
+<br>
+<hr>
+
+<footer>&copy Joshua Ramses Delgadillo Ramirez y Gustavo Ariel Barrientos Garcia</footer>
+</body>
+</html>
